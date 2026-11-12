@@ -35,7 +35,7 @@ for student in students:
     work_type = student[1]
     misses = student[2]
 
-    if not(0 <= result <= 100) or not(0 <= misses <= 5): проверка корректности ввода
+    if not(0 <= result <= 100) or not(0 <= misses <= 5): #проверка корректности ввода
         print('Введены некорректные значения. Попробуйте заново')
     else:
         level = max(i for i, point in enumerate(points) if result >= point) #максимальный индекс массива points, результат по которому меньше чем результат студента
